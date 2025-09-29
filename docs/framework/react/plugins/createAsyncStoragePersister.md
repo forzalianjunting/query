@@ -34,7 +34,7 @@ bun add @tanstack/query-async-storage-persister @tanstack/react-query-persist-cl
 - Import the `createAsyncStoragePersister` function
 - Create a new asyncStoragePersister
   - you can pass any `storage` to it that adheres to the `AsyncStorage` interface - the example below uses the async-storage from React Native.
-  - storages that read and write synchronously, like `window.localstorage`, also adhere to the `AsyncStorage` interface and can therefore also be used with `createAsyncStoragePersister`.
+  - storages that read and write synchronously, like `window.localStorage`, also adhere to the `AsyncStorage` interface and can therefore also be used with `createAsyncStoragePersister`.
 - Wrap your app by using [`PersistQueryClientProvider`](../persistQueryClient.md#persistqueryclientprovider) component.
 
 ```tsx
